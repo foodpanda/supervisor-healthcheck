@@ -26,7 +26,6 @@ Normal response
 ```
 
 Error response:
-```
 ```json
 {
   "status": false,
