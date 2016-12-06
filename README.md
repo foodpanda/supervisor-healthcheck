@@ -9,6 +9,8 @@ A simple health check for [Supervisor](http://supervisord.org/), uses [XML-RPC A
 
 ## Endpoints
 
+Default port is 8080.
+
 - `/` - always returns 200 and "ok"
 - `/health/check` opens Supervisor RPC and returns result based on running tasks
 
