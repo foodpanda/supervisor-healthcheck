@@ -14,6 +14,7 @@ A simple health check for [Supervisor](http://supervisord.org/), uses [XML-RPC A
 
 ## Examples
 
+Normal response
 ```json
 {
   "status": true,
@@ -24,3 +25,17 @@ A simple health check for [Supervisor](http://supervisord.org/), uses [XML-RPC A
 }
 ```
 
+Error response:
+```
+```json
+{
+  "status": false,
+  "supervisor_state": {
+    "state_code": 1,
+    "state_name": "RUNNING"
+  },
+  "messages": [
+    "worker_1"
+  ]
+}
+```
