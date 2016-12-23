@@ -40,7 +40,7 @@ type SupervisorProcessInfo struct {
 }
 
 func SupervisorUrl() *url.URL {
-	endpoint, err := url.ParseRequestURI(fmt.Sprintf("http://%s:%s", os.Getenv("HOST"), os.Getenv("PORT")))
+	endpoint, err := url.ParseRequestURI(fmt.Sprintf("http://%s:%s", os.Getenv("SUPERVISOR_HOST"), os.Getenv("SUPERVISOR_PORT")))
 	if err != nil {
 		log.Fatal(err)
 	}
